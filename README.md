@@ -1,4 +1,4 @@
-# RealmKit Free — Keycloak + Angular starter
+# RealmKit for Angular — Free Tier
 
 A minimal, **current** (Angular 22 / keycloak-angular 22 / keycloak-js 26) Keycloak setup for Angular that gets the fundamentals right:
 
@@ -22,15 +22,16 @@ Log in from the home page; `/user` is a guarded route that shows your token's id
 
 ## Want the complete, production-grade kit?
 
-**[RealmKit](https://realmkit.dev)** — the full Keycloak starter kit for Angular + Node — adds everything this free tier leaves out:
+**[RealmKit for Angular](https://realmkit.dev/angular/)** — the full Keycloak SPA kit — adds everything this free tier leaves out:
 
-- **`docker compose up` → working login on first run**: Keycloak 26 with a pre-wired realm auto-imported (clients, roles, demo users, and the audience mapper everyone forgets), plus API and UI containers.
-- **A Node/Express API with JWKS verification** (key-rotation safe) and **issuer + audience validation**, with the full middleware family: `hasRole`, `hasAnyRole`, `hasAllRoles`, `hasScope`, `hasResourceRole`.
+- **`docker compose up` → working login on first run**: Keycloak 26 with a pre-wired realm auto-imported — clients, roles, demo users, and the API audience mapper everyone forgets. Zero Keycloak setup.
 - **The 401 refresh queue interceptor**: one token refresh for N concurrent 401s — no refresh stampedes.
-- **Silent SSO** properly configured (`silent-check-sso.html`).
-- Unit + e2e test suites, CI workflow, multi-env build configs, and docs that explain *why* each piece is the way it is (architecture, auth flows, realm guide, production checklist, troubleshooting).
+- **Silent SSO** properly configured (`silent-check-sso.html`) — no full-page redirect round trip on every load.
+- The full lazy-loaded app shell (admin, logout, unauthorized, forbidden, error pages), multi-env build configs, a scripted PKCE login e2e + CI workflow, and docs that explain *why* each piece is the way it is (architecture, auth flows, realm guide, production checklist, troubleshooting).
 
-One-time purchase, use in unlimited projects.
+Building the API side too? **[RealmKit for Node.js](https://realmkit.dev/nodejs/)** is the matching JWKS-verified Express kit — every RealmKit ships the same realm, so they compose out of the box. Both kits together are discounted.
+
+One-time purchase, use in unlimited projects. Launch pricing.
 
 Build notes: [Keycloak + Angular + Node in 2026 — the complete setup, and the five places everyone gets it wrong](https://realmkit.dev/blog/keycloak-angular-node-2026/).
 
