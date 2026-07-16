@@ -1,0 +1,9 @@
+<h1>RealmKit Free — Keycloak + Angular</h1>
+
+<p *ngIf="isLoggedIn">Signed in as <strong>{{ username }}</strong>.</p>
+<p *ngIf="!isLoggedIn">You are not signed in.</p>
+
+<button (click)="logout()" *ngIf="isLoggedIn" type="button">Log out</button>
+<button (click)="login()" *ngIf="!isLoggedIn" type="button">Log in</button>
+
+<p><a routerLink="/user">Visit the guarded route →</a></p>
