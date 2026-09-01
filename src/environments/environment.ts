@@ -17,8 +17,10 @@ export const environment = {
       onLoad: 'check-sso',
       pkceMethod: 'S256',
       checkLoginIframe: false,
-      enableLogging: true,
-      redirectUri: `${window.location.origin}`
+      enableLogging: true
+      // No redirectUri: keycloak-js defaults to the current URL, so a
+      // check-sso round trip lands back on the page you loaded (deep links,
+      // reloads on guarded routes) instead of the app root.
     } as KeycloakInitOptions
   }
 };
