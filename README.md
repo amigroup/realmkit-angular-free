@@ -37,4 +37,4 @@ Build notes: [Keycloak + Angular + Node in 2026 — the complete setup, and the 
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT — see [LICENSE.md](./LICENSE.md).
