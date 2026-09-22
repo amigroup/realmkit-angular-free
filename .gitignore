@@ -37,5 +37,5 @@ testem.log
 .DS_Store
 Thumbs.db
 
-# Local issue tracker (see the workspace CLAUDE.md)
+# Local issue tracker
 .scratch/
